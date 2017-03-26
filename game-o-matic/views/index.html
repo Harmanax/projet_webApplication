@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Insertion data</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+
+<h1><fieldset class=title>Database manager<br /></fieldset></h1>
+</br>
+
+<form id="testForm" method="POST" action="/">
+        <fieldset>
+            <i>coller le lien du jeu à récupérer</i>
+            <br />
+            <br />
+            <input id="test" name="url_lbc" type="text" placeholder="Collez l'url d'un jeu playstore" size="100" required="" />
+            <input id="submitButton" type="submit" classe="button" value="Tester" />
+        <%
+        if(locals.msg) {
+        %>
+            <div class="msg-info">
+                <%- msg %>
+            </div>
+        <%
+        }
+        %>
+            </fieldset>
+    </form>
+</body>
+
+
+</html>
